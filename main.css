@@ -1,43 +1,27 @@
 body {
     margin: 0;
     user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#upper {
-    background: #eee;
+svg {
     width: 100%;
-    height: 95%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
 }
 
-
-#lower {
-    background: #eee;
+#text {
     width: 100%;
-    height: 5%;
+    height: 10%;
+    padding-top:1%;
 }
 
-.timestamp {
-    width: 0.5%;
-    margin-left: 50%;
-    height: 100%;
-    background: #000;
+span {
+    font-size: 40px;
+    text-align: center;
 }
 
-#images {
-    background: #eee;
-    display: none;
-    width: 100%;
-    height: 20%;
-}
-
-
-img {
-    height: 100%;
-    width: auto;
-}
-
-.imgholder {
-    width: 25%;
-    height: 100%;
-    float: left;
+svg text {
+    pointer-events: none;
 }
