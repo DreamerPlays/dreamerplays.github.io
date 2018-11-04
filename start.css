@@ -2,8 +2,18 @@ body {
     margin: 0;
     overflow: hidden;
     user-select: none;
+    pointer-events: none;
 }
 
+
+#flüch {
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: all;
+    font-size: 140px;
+    position: absolute;
+    text-align: center;
+    top: 18%; left: 23%; bottom: 20%; right: 17%;
+}
 
 #left {
     width: 100%;
@@ -58,4 +68,3 @@ body {
     background-position-x: 100%;
     background-position-y: 50%;
 }
-
