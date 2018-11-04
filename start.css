@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+#left {
+    width: 100%;
+    height: 100%;
+    background-image: url('oldtv.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#bgleft:hover {
+    background: url('alt.jpg');
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+}
+
+#bgleft {
+    background-image: url('oldtv-bg.png');
+    background-size: 100% 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+    transition: 0.2s;
+}
+
+
+
+#bgright:hover {
+    background: url('neu.jpg');
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+}
+
+#bgright {
+    background-image: url('newtv-bg.png');
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 160% 100%;
+    transition: 0.2s;
+}
+
+
+#right {
+    width: 100%;
+    height: 100%;
+    background-image: url('newtv.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: 100%;
+    background-position-y: 50%;
+}
+
