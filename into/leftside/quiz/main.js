@@ -8,8 +8,7 @@ cb = (ev) => {
         $(document.body).css('transition','0.2s');
         $(document.body).css('background','#2e3');
         setTimeout(()=>{$(document.body).css('background','#fff')},1000);
-        setTimeout(()=>{window.location.href = "alt2.html"},1200);
-        //nächste seite
+        setTimeout(()=>{window.location.href = "../erklärung"},1200);
     }else{
         $('svg').unbind('click');
         $(document.body).css('transition','0.2s');

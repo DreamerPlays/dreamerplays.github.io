@@ -1,0 +1,90 @@
+<html>
+  <head>
+      <title>Flüchtlinge</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="../jquery.js"></script>
+    <script src="../jquery-ui.min.js"></script>
+    <script src="main.js"></script>
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      user-select: none;
+      margin: 0;
+    }
+    font {
+      font-size: 50px;
+    }
+    #left {
+      width: 30%;
+      height: 100%;
+      float: left;
+    }
+
+    #right {
+      height: 100%;
+      width: 70%;
+      float: left;
+    }
+
+    .container1 {
+      height: 20vh;
+      margin-top: 10vh;
+      width: 100%;
+    }
+
+    .container1 img {
+      height: 100%;
+      margin-left: 10%;
+      float: left;
+    }
+
+    .drop {
+      float: left;
+      margin-left: 5%;
+      height: 20vh;
+      width: 20vh;
+      outline: 3px solid;
+      outline-offset: -3px;
+      transition: 0.2s;
+    }
+
+    .drag {
+      height: 30vh;
+      margin-top: calc(60vh / 4);
+      float: left;
+    }
+
+    .ui-state-active {
+      outline: 3px dashed;
+    outline-offset: -5px;
+      
+    }
+    </style>
+  </head>
+  <body onload="loaded()">
+    <div id="left">
+      <div class="container1">
+        <img src="gold.svg">
+        <div id="drop1" class="drop">
+        </div>
+      </div>
+      <div class="container1">
+          <img src="silver.svg">
+          <div id="drop2" class="drop">
+            </div>
+      </div>
+      <div class="container1">
+          <img src="bronze.svg">
+          <div id="drop3" class="drop">
+            </div>
+      </div>
+    </div>
+    <div id="right">
+      <font>Ordne diese Länder nach der Anzahl der Flüchtlinge</font>
+      <img src="albanien.png" id="albanien" class="drag">
+      <img src="kosovo.png" id="kosovo" class="drag">
+      <img src="syrien.png" id='syrien' class="drag">
+      <img src="afghanistan.png" id='afghanistan' class="drag">
+    </div>
+  </body>
+</html>
